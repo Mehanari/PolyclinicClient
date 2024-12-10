@@ -48,7 +48,14 @@ public class ClientRunner {
         try {
             System.out.println("Trying to get a medical card with a non-existing card number");
             MedicalCard card = port.getMedicalCard(new GetMedicalCard(11415), null, serverToken).getMedicalCard();
-            System.out.println(card.getAddress());
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+        try {
+            System.out.println("Trying to send null as a medical card");
+            int cardNumber = port.addMedicalCard(new AddMedicalCard(null), null, serverToken).getReturn();
         }
         catch (Exception e){
             System.out.println(e);
