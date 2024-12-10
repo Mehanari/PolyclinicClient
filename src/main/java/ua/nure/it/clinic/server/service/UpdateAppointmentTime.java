@@ -1,5 +1,5 @@
 
-package ua.nure.it.clinic.service;
+package ua.nure.it.clinic.server.service;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -103,12 +103,4 @@ public class UpdateAppointmentTime {
         this.endTime = value;
     }
 
-    public UpdateAppointmentTime() {
-    }
-
-    public UpdateAppointmentTime(int appointmentId, Object startTime, Object endTime) {
-        this.appointmentId = appointmentId;
-        this.startTime = startTime;
-        this.endTime = endTime;
-    }
 }

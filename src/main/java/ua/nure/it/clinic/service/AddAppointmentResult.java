@@ -60,4 +60,10 @@ public class AddAppointmentResult {
         this.appointmentResult = value;
     }
 
+    public AddAppointmentResult() {
+    }
+
+    public AddAppointmentResult(AppointmentResult appointmentResult) {
+        this.appointmentResult = appointmentResult;
+    }
 }

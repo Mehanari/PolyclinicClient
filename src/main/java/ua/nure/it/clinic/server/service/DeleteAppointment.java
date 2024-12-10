@@ -1,5 +1,5 @@
 
-package ua.nure.it.clinic.service;
+package ua.nure.it.clinic.server.service;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -49,10 +49,4 @@ public class DeleteAppointment {
         this.appointmentId = value;
     }
 
-    public DeleteAppointment() {
-    }
-
-    public DeleteAppointment(int appointmentId) {
-        this.appointmentId = appointmentId;
-    }
 }

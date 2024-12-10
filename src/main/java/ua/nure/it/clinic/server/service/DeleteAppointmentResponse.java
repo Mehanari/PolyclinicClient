@@ -1,5 +1,5 @@
 
-package ua.nure.it.clinic.service;
+package ua.nure.it.clinic.server.service;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -9,12 +9,12 @@ import ua.nure.it.clinic.appointment.Appointment;
 
 
 /**
- * <p>Java class for addAppointmentForPatient complex type.
+ * <p>Java class for deleteAppointmentResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="addAppointmentForPatient"&gt;
+ * &lt;complexType name="deleteAppointmentResponse"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -28,10 +28,10 @@ import ua.nure.it.clinic.appointment.Appointment;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "addAppointmentForPatient", propOrder = {
+@XmlType(name = "deleteAppointmentResponse", propOrder = {
     "appointment"
 })
-public class AddAppointmentForPatient {
+public class DeleteAppointmentResponse {
 
     @XmlElement(namespace = "http://it.nure.ua/clinic/appointment")
     protected Appointment appointment;
@@ -60,10 +60,4 @@ public class AddAppointmentForPatient {
         this.appointment = value;
     }
 
-    public AddAppointmentForPatient() {
-    }
-
-    public AddAppointmentForPatient(Appointment appointment) {
-        this.appointment = appointment;
-    }
 }

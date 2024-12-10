@@ -1,5 +1,5 @@
 
-package ua.nure.it.clinic.service;
+package ua.nure.it.clinic.server.service;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -7,12 +7,12 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getAppointmentsForPatient complex type.
+ * <p>Java class for getMedicalCard complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getAppointmentsForPatient"&gt;
+ * &lt;complexType name="getMedicalCard"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -26,10 +26,10 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getAppointmentsForPatient", propOrder = {
+@XmlType(name = "getMedicalCard", propOrder = {
     "cardNumber"
 })
-public class GetAppointmentsForPatient {
+public class GetMedicalCard {
 
     protected int cardNumber;
 
@@ -49,10 +49,4 @@ public class GetAppointmentsForPatient {
         this.cardNumber = value;
     }
 
-    public GetAppointmentsForPatient() {
-    }
-
-    public GetAppointmentsForPatient(int cardNumber) {
-        this.cardNumber = cardNumber;
-    }
 }

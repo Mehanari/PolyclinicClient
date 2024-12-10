@@ -49,4 +49,10 @@ public class GetMedicalCard {
         this.cardNumber = value;
     }
 
+    public GetMedicalCard() {
+    }
+
+    public GetMedicalCard(int cardNumber) {
+        this.cardNumber = cardNumber;
+    }
 }

@@ -1,5 +1,5 @@
 
-package ua.nure.it.clinic.service;
+package ua.nure.it.clinic.server.service;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -9,12 +9,12 @@ import ua.nure.it.clinic.appointmentresult.AppointmentResult;
 
 
 /**
- * <p>Java class for updateAppointmentResult complex type.
+ * <p>Java class for updateAppointmentResultResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="updateAppointmentResult"&gt;
+ * &lt;complexType name="updateAppointmentResultResponse"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -28,10 +28,10 @@ import ua.nure.it.clinic.appointmentresult.AppointmentResult;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "updateAppointmentResult", propOrder = {
+@XmlType(name = "updateAppointmentResultResponse", propOrder = {
     "appointmentResult"
 })
-public class UpdateAppointmentResult {
+public class UpdateAppointmentResultResponse {
 
     @XmlElement(namespace = "http://it.nure.ua/clinic/appointmentResult")
     protected AppointmentResult appointmentResult;
@@ -60,10 +60,4 @@ public class UpdateAppointmentResult {
         this.appointmentResult = value;
     }
 
-    public UpdateAppointmentResult() {
-    }
-
-    public UpdateAppointmentResult(AppointmentResult appointmentResult) {
-        this.appointmentResult = appointmentResult;
-    }
 }
